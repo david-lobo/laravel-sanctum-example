@@ -26,7 +26,7 @@ const Navigation = (props) => {
     return (
         <Navbar expand="md" variant="light" bg="white" className="shadow-sm">
             <Container>
-                <Nav.Link className="navbar-brand" as={Link} to="/home">Laravel Sanctum</Nav.Link>
+                <Nav.Link className="navbar-brand" as={Link} to="/">Laravel Sanctum</Nav.Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
