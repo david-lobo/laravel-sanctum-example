@@ -1,5 +1,7 @@
 # Laravel Sanctum Example
 
+This is an example of using Laravel Sanctum and React to create a Single Page Application (SPA).  The Laravel Authentication scaffolding (Login, Register, Forgot Password, Reset Password) are implemented in React.
+
 ## Laravel setup
 
 ### Install composer dependencies
