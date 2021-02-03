@@ -55,8 +55,8 @@ function Login() {
 
     // Custom hook
     const route = User.login;
-    const handleSuccess = (response) => {
-        loginUser(response.data.data.user);
+    const handleSuccess = async (response) => {
+        await loginUser(response.data.data.user);
         history.push('/home');
     }
     

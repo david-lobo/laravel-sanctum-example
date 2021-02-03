@@ -80,8 +80,8 @@ function Register() {
     
     // Custom hook
     const route = User.register;
-    const handleSuccess = (response) => {
-        loginUser(response.data.data.user);
+    const handleSuccess = async (response) => {
+        await loginUser(response.data.data.user);
         history.push('/home');
     }
     
