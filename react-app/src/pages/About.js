@@ -11,8 +11,8 @@ function About(props) {
                             <h1 className="jumbotron-heading">About Page</h1>
                             <p className="lead text-muted">This is a public page that is visible without authentication.  The homepage is a protected page that requires a user to login.</p>
                             <p>
-                                <Link to="/auth/login" className="btn btn-primary my-2 mr-2">Login</Link>
-                                <Link to="/auth/register" className="btn btn-success my-2">Register</Link>
+                                <Link to="/login" className="btn btn-primary my-2 mr-2">Login</Link>
+                                <Link to="/register" className="btn btn-success my-2">Register</Link>
                             </p>
                         </div>
                     </section>

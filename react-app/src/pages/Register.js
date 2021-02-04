@@ -153,7 +153,6 @@ function Register() {
                 <Row className="form-group">
                     <Col md={{span: 8, offset: 4}}>
                         <SubmitButton buttonText="Register" loadingText="Loading" isLoading={isSubmitting}/>
-                        <a className="btn btn-link" href="/">Forgot your password</a>
                     </Col>
                 </Row>
             </Form>

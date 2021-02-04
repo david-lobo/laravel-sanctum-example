@@ -116,7 +116,7 @@ function Login() {
                 <Row className="form-group">
                     <Col md={{span: 8, offset: 4}}>
                         <SubmitButton buttonText="Login" loadingText="Loading" isLoading={isSubmitting}/>
-                        <Link className="btn btn-link" to="/auth/forgot-password">Forgot your password</Link>
+                        <Link className="btn btn-link" to="/forgot-password">Forgot your password</Link>
                     </Col>
                 </Row>
             </Form>

@@ -24,11 +24,11 @@ function Router(props) {
                     <Switch>
                         <PrivateRoute path="/home" component={Home} />
                         <Route exact path="/" component={Welcome} />
-                        <Route exact path="/auth/login" component={Login} />
-                        <Route exact path="/auth/forgot-password" component={ForgotPassword} />
-                        <Route path="/auth/register" component={Register} />
+                        <Route exact path="/login" component={Login} />
+                        <Route exact path="/forgot-password" component={ForgotPassword} />
+                        <Route path="/register" component={Register} />
                         <Route path="/about" component={About} />
-                        <Route exact path="/auth/reset-password/:token" component={ResetPassword}/>
+                        <Route exact path="/reset-password/:token" component={ResetPassword}/>
                     </Switch>
                 </main>
             </BrowserRouter>}

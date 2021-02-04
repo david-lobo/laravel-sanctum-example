@@ -14,11 +14,11 @@ const Navigation = (props) => {
         </NavDropdown>;
     } else {
         authMenu = <>
-            <NavItem eventkey={3} href="/auth/login">
-                <Nav.Link as={Link} to="/auth/login">Login</Nav.Link>
+            <NavItem eventkey={3} href="/login">
+                <Nav.Link as={Link} to="/login">Login</Nav.Link>
             </NavItem>
-             <NavItem eventkey={4} href="/auth/register">
-                <Nav.Link as={Link} to="/auth/register">Register</Nav.Link>
+             <NavItem eventkey={4} href="/register">
+                <Nav.Link as={Link} to="/register">Register</Nav.Link>
              </NavItem>
         </>;
     }

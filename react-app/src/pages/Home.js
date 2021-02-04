@@ -16,7 +16,7 @@ function Home(props) {
 
         await logoutUser();
 
-        history.push('/auth/login')
+        history.push('/login')
     }
 
     let userDetails = null;
