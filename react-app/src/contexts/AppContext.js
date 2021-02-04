@@ -5,35 +5,12 @@ export const AppContext = createContext();
 
 const AppContextProvider = (props) => {
     const [app, dispatch] = useReducer(AppReducer, {
-        pageLoading: false,
-        message: {
-            text: 'Some message text',
-            type: 'info',
-            status: 'display'
-        }
+        pageLoading: true
       });
-
-    const addFlashMessage = (text, type) => {
-        dispatch({
-            type: 'SET_MESSAGE',
-            payload: {
-                text,
-                type
-            }
-        });
-    }
-
-    const removeFlashMessage = (text, type) => {
-        dispatch({
-            type: 'REMOVE_MESSAGE'
-        });
-    }
     
     const contextValue = {
         app,
-        dispatch,
-        addFlashMessage,
-        removeFlashMessage
+        dispatch
     };
     return (
         <AppContext.Provider value={contextValue}>
