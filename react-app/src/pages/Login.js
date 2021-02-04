@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { useHistory, Redirect } from "react-router-dom";
+import { useHistory, Redirect, Link } from "react-router-dom";
 import { Row, Col, Form } from 'react-bootstrap';
 
 import User from "../apis/User";
@@ -116,7 +116,7 @@ function Login() {
                 <Row className="form-group">
                     <Col md={{span: 8, offset: 4}}>
                         <SubmitButton buttonText="Login" loadingText="Loading" isLoading={isSubmitting}/>
-                        <a className="btn btn-link" href="/auth/forgot-password">Forgot your password</a>
+                        <Link className="btn btn-link" to="/auth/forgot-password">Forgot your password</Link>
                     </Col>
                 </Row>
             </Form>
